@@ -1,6 +1,9 @@
-#include "Supplier.h"
-#include "Organization.h"
 #include <iostream>
+
+#include "Supplier.h"
+
+#include "../organization/Organization.h"
+
 
 Supplier::Supplier(const std::string& name) : supplierName(name) {}
 

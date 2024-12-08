@@ -2,6 +2,7 @@
 #include <iostream>
 #include <algorithm>
 
+
 void Organization::addProduct(const Product& product) {
     products.push_back(product);
 }

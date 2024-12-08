@@ -2,8 +2,8 @@
 #define ORGANIZATION_H
 
 #include <vector>
-#include "Product.h"
-#include "Supplier.h"
+#include "../product/Product.h"
+#include "../supplier/Supplier.h"
 
 class Organization {
 private:
