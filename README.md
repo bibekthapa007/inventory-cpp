@@ -62,7 +62,7 @@ This Inventory Management System is a console-based application designed to mana
    - If using GCC:
 
    ```bash
-   g++ main.cpp Product.cpp Supplier.cpp Organization.cpp -o inventory-management
+   g++ main.cpp modules/**/*.cpp utils/**/*.cpp -o inventory-management
    ```
 
    - If using Visual Studio or another IDE, ensure all .cpp and .h files are included in the project.
@@ -97,4 +97,5 @@ This Inventory Management System is a console-based application designed to mana
    Handling invalid user inputs for numeric and string values was a challenge but was addressed using std::numeric_limits to clear invalid input streams.
 
 2. Observer Pattern Implementation:
+
    Ensuring that the suppliers receive updates only when relevant conditions are met requires careful design.

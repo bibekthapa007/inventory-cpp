@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall
 TARGET = inventory_management_system
-OBJECTS = main.o Product.o Supplier.o Organization.o
+OBJECTS = main.o modules/**/*.cpp utils/**/*.cpp
 
 all: $(TARGET)
 
