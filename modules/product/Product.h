@@ -3,7 +3,8 @@
 
 #include <string>
 
-class Product {
+class Product
+{
 private:
     int productID;
     std::string productName;
@@ -13,7 +14,7 @@ private:
     int reorderThreshold;
 
 public:
-    Product(int id, const std::string& name, const std::string& cat, double pr, int stock, int threshold);
+    Product(int id, const std::string &name, const std::string &cat, double pr, int stock, int threshold);
 
     int getProductID() const;
     std::string getProductName() const;

@@ -5,30 +5,33 @@
 
 class Organization; // Forward declaration
 
-class Supplier {
+class Supplier
+{
 protected:
     std::string supplierName;
 
 public:
-    Supplier(const std::string& name);
+    Supplier(const std::string &name);
     virtual ~Supplier() {}
 
     virtual void notifyRestock(int productID, int quantity) = 0;
-    virtual void subscribeToOrganization(Organization* organization) = 0;
+    virtual void subscribeToOrganization(Organization *organization) = 0;
 };
 
-class LocalSupplier : public Supplier {
+class LocalSupplier : public Supplier
+{
 public:
-    LocalSupplier(const std::string& name);
+    LocalSupplier(const std::string &name);
     void notifyRestock(int productID, int quantity) override;
-    void subscribeToOrganization(Organization* organization) override;
+    void subscribeToOrganization(Organization *organization) override;
 };
 
-class GlobalSupplier : public Supplier {
+class GlobalSupplier : public Supplier
+{
 public:
-    GlobalSupplier(const std::string& name);
+    GlobalSupplier(const std::string &name);
     void notifyRestock(int productID, int quantity) override;
-    void subscribeToOrganization(Organization* organization) override;
+    void subscribeToOrganization(Organization *organization) override;
 };
 
 #endif

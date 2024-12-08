@@ -11,20 +11,25 @@
  *
  * @return The valid double value entered by the user.
  */
-int getIntInput() {
+int getIntInput()
+{
     int value;
-    while (true) {
+    
+    while (true)
+    {
         std::cin >> value;
-        if (std::cin.fail()) {
-            std::cin.clear(); 
+        if (std::cin.fail())
+        {
+            std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // discard invalid input
             std::cout << "Invalid input. Please enter an integer: ";
-        } else {
+        }
+        else
+        {
             return value;
         }
     }
 }
-
 
 /**
  * @brief Safely reads a double value from standard input.
@@ -34,15 +39,21 @@ int getIntInput() {
  *
  * @return The valid double value entered by the user.
  */
-double getDoubleInput() {
+double getDoubleInput()
+{
     double value;
-    while (true) {
+
+    while (true)
+    {
         std::cin >> value;
-        if (std::cin.fail()) {
-            std::cin.clear(); 
+        if (std::cin.fail())
+        {
+            std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // discard invalid input
             std::cout << "Invalid input. Please enter a number: ";
-        } else {
+        }
+        else
+        {
             return value;
         }
     }

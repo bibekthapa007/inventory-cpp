@@ -5,18 +5,19 @@
 #include "../product/Product.h"
 #include "../supplier/Supplier.h"
 
-class Organization {
+class Organization
+{
 private:
     std::vector<Product> products;
-    std::vector<Supplier*> suppliers;
+    std::vector<Supplier *> suppliers;
 
 public:
-    void addProduct(const Product& product);
+    void addProduct(const Product &product);
     void removeProduct(int productID);
-    void searchProduct(const std::string& searchTerm);
+    void searchProduct(const std::string &searchTerm);
     void updateStock(int productID, int amountSold);
-    void notifySuppliers(const Product& product);
-    void subscribeSupplier(Supplier* supplier);
+    void notifySuppliers(const Product &product);
+    void subscribeSupplier(Supplier *supplier);
     void generateReport() const;
 };
 
